@@ -3,9 +3,6 @@ import type { Metadata } from "next";
 
 // components
 import SquaresClient from "@/components/bits/Squares/SquaresClient";
-import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { redirect } from "next/navigation";
 
 // metadata
 export const metadata: Metadata = {
