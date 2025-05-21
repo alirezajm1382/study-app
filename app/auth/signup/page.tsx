@@ -51,9 +51,6 @@ const SignupPage: React.FunctionComponent = () => {
     },
   });
 
-  //TODO: handle login
-  const handleSubmit = () => {};
-
   return (
     <Card className="w-full max-w-sm bg-base-100 shadow-xl m-2 z-1 bg-background">
       <CardHeader>
