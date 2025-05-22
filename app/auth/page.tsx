@@ -15,7 +15,7 @@ import {
 
 const AuthMainPage: React.FunctionComponent = () => {
   return (
-    <Card className="w-full max-w-sm bg-base-100 shadow-xl m-2 z-1 bg-background">
+    <Card className="w-full max-w-sm bg-base-100 shadow-xl m-2 z-0 bg-background">
       <CardHeader>
         <CardTitle>
           <DecryptedText

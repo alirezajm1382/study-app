@@ -19,7 +19,7 @@ const AuthLayoutIconButton: React.FunctionComponent = () => {
     <Button
       size='icon'
       onClick={() => router.replace(redirect)}
-      className='absolute top-0 left-0 text-white rounded-md border-1 border-white m-3'
+      className='absolute top-0 left-0 text-white rounded-md border-1 border-white m-3 z-1'
     >
       <ActionIcon />
     </Button>
