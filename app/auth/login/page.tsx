@@ -44,8 +44,6 @@ const LoginPage: React.FunctionComponent = () => {
     },
   })
 
-  //TODO: handle login
-
   return (
     <Card className='w-full max-w-sm bg-base-100 shadow-xl m-2 z-1 bg-background'>
       <CardHeader>
@@ -60,7 +58,7 @@ const LoginPage: React.FunctionComponent = () => {
           />
         </CardTitle>
         <CardDescription>
-          <p>Self-improvement awaits in Study App!</p>
+          <p>Self-improvement awaits!</p>
         </CardDescription>
       </CardHeader>
       <CardContent className='flex flex-col gap-4'>

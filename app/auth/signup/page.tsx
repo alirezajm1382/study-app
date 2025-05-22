@@ -60,7 +60,7 @@ const SignupPage: React.FunctionComponent = () => {
           />
         </CardTitle>
         <CardDescription>
-          <p>Study App for the better!</p>
+          <p>For the greater good!</p>
         </CardDescription>
       </CardHeader>
       <CardContent className='flex flex-col gap-4'>
@@ -91,10 +91,7 @@ const SignupPage: React.FunctionComponent = () => {
                 <FormItem>
                   <FormLabel>Username</FormLabel>
                   <FormControl>
-                    <Input
-                      placeholder='leomessi'
-                      {...field}
-                    />
+                    <Input placeholder='leomessi' {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -106,20 +103,13 @@ const SignupPage: React.FunctionComponent = () => {
                 <FormItem>
                   <FormLabel>Password</FormLabel>
                   <FormControl>
-                    <Input
-                      placeholder='********'
-                      type='password'
-                      {...field}
-                    />
+                    <Input placeholder='********' type='password' {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <Button
-              type='submit'
-              variant='default'
-            >
+            <Button type='submit' variant='default'>
               Sign Up
             </Button>
           </form>
