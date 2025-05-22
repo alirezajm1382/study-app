@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 // components
 import SquaresClient from "@/components/bits/Squares/SquaresClient";
+import AuthLayoutIconButton from "@/components/AuthLayoutIconButton";
 
 // metadata
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function AuthLayout({
 }>) {
   return (
     <div className="flex justify-center items-center h-screen">
+      <AuthLayoutIconButton />
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-50">
         <SquaresClient
           speed={0.5}

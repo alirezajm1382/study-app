@@ -12,24 +12,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { useRouter } from "next/navigation";
-
-// icons and styles
-import { HomeIcon } from "lucide-react";
 
 const AuthMainPage: React.FunctionComponent = () => {
-  const router = useRouter();
   return (
     <Card className="w-full max-w-sm bg-base-100 shadow-xl m-2 z-1 bg-background">
       <CardHeader>
         <CardTitle>
-          <Button
-            size="icon"
-            onClick={() => router.replace("/")}
-            className="absolute top-0 left-0 text-white rounded-md border-1 border-white m-3"
-          >
-            <HomeIcon />
-          </Button>
           <DecryptedText
             parentClassName="text-4xl font-bold font-mono z-1"
             text={`Study App.`}
