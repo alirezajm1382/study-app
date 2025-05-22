@@ -17,7 +17,7 @@ export default function AuthLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-dvh">
       <AuthLayoutIconButton />
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-50">
         <SquaresClient
