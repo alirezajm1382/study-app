@@ -29,8 +29,9 @@ import { useRouter } from 'next/navigation'
 import { zodResolver } from '@hookform/resolvers/zod'
 
 // props
-import { AuthFormProps } from '@/interfaces/auth.type'
+
 import { useUserStore } from '@/lib/stores/auth.store'
+import { AuthFormProps } from '@/lib/types/auth.type'
 
 const LoginCard: React.FunctionComponent = () => {
   const { login } = useAuth()

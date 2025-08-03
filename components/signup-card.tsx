@@ -1,5 +1,4 @@
 'use client'
-import { AuthFormProps } from '@/interfaces/auth.type'
 
 // components
 import { Button } from '@/components/ui/button'
@@ -28,6 +27,7 @@ import { useForm } from 'react-hook-form'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '@/lib/hooks/auth.hook'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { AuthFormProps } from '@/lib/types/auth.type'
 
 const SignupCard: React.FunctionComponent = () => {
   const { signUp } = useAuth()
