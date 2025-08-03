@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 
 // fonts imported
 import { Inter, JetBrains_Mono } from 'next/font/google'
+import { ThemeProvider } from '@/components/theme-provider'
 
 const interFont = Inter({
   variable: '--font-inter',
@@ -27,12 +28,19 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' suppressHydrationWarning>
       <body
         className={`${interFont.variable} ${jetbrainsMono.variable} ${jetbrainsMono.className} antialiased`}
       >
-        <main>{children}</main>
-        <Toaster richColors closeButton />
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main>{children}</main>
+          <Toaster richColors closeButton />
+        </ThemeProvider>
       </body>
     </html>
   )
