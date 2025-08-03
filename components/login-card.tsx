@@ -56,9 +56,8 @@ const LoginCard: React.FunctionComponent = () => {
     login(formData)
       .then(() => {
         toast.success('Welcome back!', { description: 'Enjoy your session!' })
-        console.log(user)
         setTimeout(() => {
-          router.push('/')
+          router.push('/dashboard')
         }, 3000)
       })
       .catch((error) => {
