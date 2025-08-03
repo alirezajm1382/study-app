@@ -5,7 +5,6 @@ import type { Metadata } from 'next'
 
 // fonts imported
 import { Inter, JetBrains_Mono } from 'next/font/google'
-import { ThemeProvider } from '@/components/theme-provider'
 
 // Toaster Provider
 import { Toaster } from '@/components/ui/sonner'
