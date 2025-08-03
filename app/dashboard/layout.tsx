@@ -1,6 +1,7 @@
 // components
 import AppNavbar from '@/components/app-navbar/app-navbar'
 import AppSidebar from '@/components/app-sidebar/app-sidebar'
+import { ThemeProvider } from '@/components/theme-provider'
 
 // providers
 import { SidebarProvider } from '@/components/ui/sidebar'
@@ -19,12 +20,19 @@ export default function DashboardLayout({
   children: React.ReactNode
 }>) {
   return (
-    <SidebarProvider>
-      <AppSidebar />
-      <div className='flex flex-col w-full'>
-        <AppNavbar />
-        <main className='grow-1'>{children}</main>
-      </div>
-    </SidebarProvider>
+    <ThemeProvider
+      attribute='class'
+      defaultTheme='system'
+      enableSystem
+      disableTransitionOnChange
+    >
+      <SidebarProvider>
+        <AppSidebar />
+        <div className='flex flex-col w-full'>
+          <AppNavbar />
+          <main className='grow-1'>{children}</main>
+        </div>
+      </SidebarProvider>
+    </ThemeProvider>
   )
 }

@@ -36,15 +36,8 @@ export default function RootLayout({
       <body
         className={`${interFont.variable} ${jetbrainsMono.variable} ${jetbrainsMono.className} antialiased`}
       >
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          enableSystem
-          disableTransitionOnChange
-        >
-          <main>{children}</main>
-          <Toaster richColors closeButton />
-        </ThemeProvider>
+        <main>{children}</main>
+        <Toaster richColors closeButton />
       </body>
     </html>
   )
