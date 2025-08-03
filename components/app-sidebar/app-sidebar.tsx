@@ -1,4 +1,4 @@
-import { Check, Home, List, Settings } from 'lucide-react'
+// components
 import {
   Sidebar,
   SidebarContent,
@@ -13,7 +13,9 @@ import {
   SidebarSeparator,
 } from '@/components/ui/sidebar'
 import UserBadge from './components/user-badge'
-import DecryptedTextClient from '../bits/DecryptedText/DecryptedTextClient'
+
+// icons
+import { Check, Home, List, Settings } from 'lucide-react'
 
 // Menu items
 const topItems = [
@@ -42,7 +44,9 @@ const bottomItems = [
   },
 ]
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export default function AppSidebar({
+  ...props
+}: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader className='h-12'>

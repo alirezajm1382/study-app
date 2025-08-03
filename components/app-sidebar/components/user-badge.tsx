@@ -1,8 +1,10 @@
 'use client'
+// components
 import DecryptedText from '@/components/bits/DecryptedText/DecryptedText'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { Card, CardContent } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
+
+// hooks
 import { useUserStore } from '@/lib/stores/auth.store'
 
 const UserBadge: React.FunctionComponent = () => {

@@ -1,16 +1,18 @@
 'use client'
-
-import * as React from 'react'
-import { Moon, Sun } from 'lucide-react'
-import { useTheme } from 'next-themes'
-
-import { Button } from '@/components/ui/button'
+// components
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { Button } from '@/components/ui/button'
+
+// icons
+import { Moon, Sun } from 'lucide-react'
+
+// hooks
+import { useTheme } from 'next-themes'
 
 export function ToggleDarkMode() {
   const { setTheme } = useTheme()

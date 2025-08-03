@@ -1,11 +1,11 @@
+// components
 import AppNavbar from '@/components/app-navbar/app-navbar'
-import { AppSidebar } from '@/components/app-sidebar/app-sidebar'
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarSeparator,
-  SidebarTrigger,
-} from '@/components/ui/sidebar'
+import AppSidebar from '@/components/app-sidebar/app-sidebar'
+
+// providers
+import { SidebarProvider } from '@/components/ui/sidebar'
+
+// types
 import { Metadata } from 'next'
 
 // metadata

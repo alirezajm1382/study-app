@@ -27,10 +27,9 @@ import { useForm } from 'react-hook-form'
 import { useAuth } from '@/lib/hooks/auth.hook'
 import { useRouter } from 'next/navigation'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useUserStore } from '@/lib/stores/auth.store'
 
 // props
-
-import { useUserStore } from '@/lib/stores/auth.store'
 import { AuthFormProps } from '@/lib/types/auth.type'
 
 const LoginCard: React.FunctionComponent = () => {
@@ -64,7 +63,7 @@ const LoginCard: React.FunctionComponent = () => {
       })
       .catch((error) => {
         toast.error('Something went wrong!', {
-          description: 'Try again in a little bit!',
+          description: `Try again in a little bit! ${error}`,
         })
       })
   }

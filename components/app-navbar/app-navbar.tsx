@@ -19,6 +19,7 @@ const AppNavbar: React.FunctionComponent<AppNavbarProps> = ({ children }) => {
               revealDirection='start'
               sequential={true}
             />
+            {children}
           </div>
         </NavigationMenu>
         <ToggleDarkMode />

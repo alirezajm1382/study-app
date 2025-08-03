@@ -27,6 +27,8 @@ import { useForm } from 'react-hook-form'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '@/lib/hooks/auth.hook'
 import { zodResolver } from '@hookform/resolvers/zod'
+
+// types
 import { AuthFormProps } from '@/lib/types/auth.type'
 
 const SignupCard: React.FunctionComponent = () => {
@@ -51,17 +53,17 @@ const SignupCard: React.FunctionComponent = () => {
   const handleSignUp = async (formData: AuthFormProps) => {
     signUp(formData)
       .then((data) => {
-        try {
-          toast.success('Welcome', {
-            description: `A confirmation email has been sent to ${data.data.user?.email}. Confirm and enjoy your stay!`,
-          })
-          setTimeout(() => {
-            router.push('/')
-          }, 3000)
-        } catch (err) {}
+        toast.success('Welcome', {
+          description: `A confirmation email has been sent to ${data.data.user?.email}. Confirm and enjoy your stay!`,
+        })
+        setTimeout(() => {
+          router.push('/')
+        }, 3000)
       })
-      .catch(() => {
-        toast('Something went wrong!')
+      .catch((error) => {
+        toast('Something went wrong!', {
+          description: `Try again in a little bit! ${error}`,
+        })
       })
   }
 
