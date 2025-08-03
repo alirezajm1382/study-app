@@ -27,14 +27,12 @@ import { useForm } from 'react-hook-form'
 import { useAuth } from '@/lib/hooks/auth.hook'
 import { useRouter } from 'next/navigation'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useUserStore } from '@/lib/stores/auth.store'
 
 // props
 import { AuthFormProps } from '@/lib/types/auth.type'
 
 const LoginCard: React.FunctionComponent = () => {
   const { login } = useAuth()
-  const { user } = useUserStore()
   const router = useRouter()
   // login form schema
   const LoginSchema = z.object({
