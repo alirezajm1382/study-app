@@ -5,6 +5,7 @@ import DecryptedTextClient from '@/components/bits/DecryptedText/DecryptedTextCl
 import SquaresClient from '@/components/bits/Squares/SquaresClient'
 import { Button } from '@/components/ui/button'
 
+// types
 import { Metadata } from 'next'
 
 // metadata
@@ -37,9 +38,6 @@ export default function Home() {
         <Link href='/auth' className='flex justify-center' prefetch>
           <Button variant='secondary'>Get Started</Button>
         </Link>
-      </div>
-      <div className='absolute bottom-0 w-full z-0 text-white opacity-20 text-center'>
-        Made with love
       </div>
     </div>
   )

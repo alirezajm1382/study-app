@@ -13,7 +13,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const AuthMainPage: React.FunctionComponent = () => {
+const AuthRoute: React.FunctionComponent = () => {
+  
   return (
     <Card className="w-full max-w-sm bg-base-100 shadow-xl m-2 z-0 bg-background">
       <CardHeader>
@@ -52,4 +53,4 @@ const AuthMainPage: React.FunctionComponent = () => {
   );
 };
 
-export default AuthMainPage;
+export default AuthRoute;

@@ -10,7 +10,7 @@ import { usePathname, useRouter } from 'next/navigation'
 // icons and styles
 import { ArrowLeft, HomeIcon } from 'lucide-react'
 
-const AuthLayoutIconButton: React.FunctionComponent = () => {
+const AuthLayoutActionButton: React.FunctionComponent = () => {
   const router = useRouter()
   const pathname = usePathname()
   const redirect = pathname === '/auth' ? '/' : '/auth'
@@ -26,4 +26,4 @@ const AuthLayoutIconButton: React.FunctionComponent = () => {
   )
 }
 
-export default AuthLayoutIconButton
+export default AuthLayoutActionButton

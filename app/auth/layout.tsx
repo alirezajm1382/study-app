@@ -3,11 +3,10 @@ import type { Metadata } from 'next'
 
 // components
 import SquaresClient from '@/components/bits/Squares/SquaresClient'
-import AuthLayoutIconButton from '@/components/AuthLayoutIconButton'
+import AuthLayoutActionButton from '@/components/auth-layout-action-button'
 
 // metadata
 export const metadata: Metadata = {
-  title: 'Auth | Study App',
   description: 'For better self-improvement',
 }
 
@@ -18,7 +17,7 @@ export default function AuthLayout({
 }>) {
   return (
     <div className='flex justify-center items-center h-dvh'>
-      <AuthLayoutIconButton />
+      <AuthLayoutActionButton />
       <div className='absolute top-0 left-0 w-full h-full overflow-hidden'>
         <SquaresClient
           speed={0.5}
