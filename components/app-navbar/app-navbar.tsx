@@ -6,9 +6,9 @@ import { SidebarInset, SidebarSeparator, SidebarTrigger } from '../ui/sidebar'
 
 const AppNavbar: React.FunctionComponent<AppNavbarProps> = ({ children }) => {
   return (
-    <SidebarInset className='max-h-12'>
+    <SidebarInset className='max-h-14'>
       <div className='flex flex-row items-center justify-between mx-2'>
-        <NavigationMenu className='flex flex-row grow-1 shrink-0 items-center gap-2 transition-[width,height] ease-linear h-12'>
+        <NavigationMenu className='flex flex-row grow-1 shrink-0 items-center gap-2 transition-[width,height] ease-linear h-14'>
           <div className='flex flex-row items-center'>
             <SidebarTrigger className='-ml-1' />
             <DecryptedTextClient

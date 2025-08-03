@@ -13,14 +13,14 @@ const UserBadge: React.FunctionComponent = () => {
     <div className='flex flex-row gap-2 ms-1 items-center'>
       {user ? (
         <>
-          <Avatar className='size-8'>
+          <Avatar className='size-10'>
             <AvatarFallback className='bg-blue-100 text-blue-950'>
               {user?.email?.slice(0, 2)}
             </AvatarFallback>
           </Avatar>
           <DecryptedText
             text={user?.email || ''}
-            parentClassName='text-xs z-1'
+            parentClassName='text-sm z-1 text-ellipsis'
             animateOn='view'
             speed={100}
             revealDirection='start'
@@ -29,7 +29,7 @@ const UserBadge: React.FunctionComponent = () => {
         </>
       ) : (
         <>
-          <Skeleton className='size-8 rounded-full' />
+          <Skeleton className='size-10 rounded-full' />
           <div className='flex flex-col gap-2'>
             <Skeleton className='h-3 w-32' />
           </div>

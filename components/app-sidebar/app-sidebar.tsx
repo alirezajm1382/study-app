@@ -49,7 +49,7 @@ export default function AppSidebar({
 }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
-      <SidebarHeader className='h-12'>
+      <SidebarHeader className='h-14'>
         {/* user badge */}
         <UserBadge />
       </SidebarHeader>
